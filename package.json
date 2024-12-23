@@ -1,0 +1,21 @@
+{
+  "name": "jtbdark",
+  "displayName": "jtbDark",
+  "description": "Imitating the dark theme of JETBAINS IDE",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "JTB Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/JTB Dark-color-theme.json"
+      }
+    ]
+  }
+}
