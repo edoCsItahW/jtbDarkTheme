@@ -1217,6 +1217,7 @@
 		"scope": [
 			"entity.name.type.interface.ts",
 			"entity.name.type.alias.ts",
+			"variable.other.readwrite.alias.ts"
 		],
 		"settings": {
 			"foreground": "#B200B2",
@@ -1342,7 +1343,8 @@
 		"name": "变量",
 		"scope": [
 			"variable.other.constant.ts",
-			"variable.other.readwrite.ts"
+			"variable.other.readwrite.ts",
+			"variable.other.object.ts",
 		],
 		"settings": {
 			"foreground": "#BCBEC4",
@@ -1353,7 +1355,9 @@
 		"name": "对象属性",
 		"scope": [
 			"variable.object.property.ts",
-			"meta.object-literal.key.ts"
+			"meta.object-literal.key.ts",
+			"variable.other.object.property.ts",
+			"variable.other.property.ts"
 		],
 		"settings": {
 			"foreground": "#C77DBB",
@@ -1409,6 +1413,62 @@
 		],
 		"settings": {
 			"foreground": "#F87527",
+		}
+	},
+	/* JSON */
+	// 键
+	{
+		"name": "键",
+		"scope": [
+			"support.type.property-name.json.comments",
+			"punctuation.support.type.property-name.begin.json.comments",
+			"punctuation.support.type.property-name.end.json.comments"		
+		],
+		"settings": {
+			"foreground": "#C77DBB",
+		}
+	},
+	// 符号
+	{
+		"name": "符号",
+		"scope": [
+			"punctuation.separator.dictionary.key-value.json.comments",
+			"punctuation.separator.dictionary.pair.json.comments",
+			"punctuation.separator.array.json.comments"
+		],
+		"settings": {
+			"foreground": "#BCBEC4",
+		}
+	},
+	// 字符串
+	{
+		"name": "字符串",
+		"scope": [
+			"string.quoted.double.json.comments"
+		],
+		"settings": {
+			"foreground": "#6AAB73",
+		}
+	},
+	// 关键字
+	{
+		"name": "关键字",
+		"scope": [
+			"constant.language.json.comments",
+			"constant.character.escape.json.comments"
+		],
+		"settings": {
+			"foreground": "#CF8E6D",
+		}
+	},
+	// 数字
+	{
+		"name": "数字",
+		"scope": [
+			"constant.numeric.json.comments"
+		],
+		"settings": {
+			"foreground": "#2AACB8",
 		}
 	}
 	]
