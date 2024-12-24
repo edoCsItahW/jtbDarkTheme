@@ -2,7 +2,7 @@
   "name": "jtbdark",
   "displayName": "jtbDark",
   "description": "Imitating the dark theme of JETBAINS IDE",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.96.0"
   },

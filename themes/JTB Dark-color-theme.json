@@ -1038,7 +1038,10 @@
 			"keyword.operator.comparison.cpp",
 			"punctuation.separator.pointer-access.cpp",
 			"punctuation.separator.label.cpp",
-			"keyword.operator.bitwise.shift.cpp"
+			"keyword.operator.bitwise.shift.cpp",
+			"keyword.operator.increment.cpp",
+			"keyword.operator.decrement.cpp",
+			"keyword.operator.bitwise.cpp"
 		],
 		"settings": {
 			"foreground": "#BCBEC4"
@@ -1105,7 +1108,8 @@
 		"scope": [
 			"variable.other.object.access.cpp",
 			"variable.parameter.preprocessor.cpp",
-			"meta.preprocessor.macro.cpp"
+			"meta.preprocessor.macro.cpp",
+			"variable.other.object"
 		],
 		"settings": {
 			"foreground": "#BCBEC4",
@@ -1118,7 +1122,10 @@
 			"keyword.other.using.directive.cpp",
 			"keyword.other.typedef.cpp",
 			"keyword.other.concept.cpp",
-			"keyword.other.requires.cpp"
+			"keyword.other.requires.cpp",
+			"constant.language.nullptr.cpp",
+			"constant.language.true.cpp",
+			"constant.language.false.cpp",
 		],
 		"settings": {
 			"foreground": "#CF8E6D",
@@ -1150,7 +1157,8 @@
 	{
 		"name": "属性",
 		"scope": [
-			"variable.other.property.cpp"
+			"variable.other.property.cpp",
+			"variable.other.object.property.cpp"
 		],
 		"settings": {
 			"foreground": "#9373A5",
@@ -1206,6 +1214,10 @@
 			"variable.language.this.ts",
 			"constant.language.boolean.true.ts",
 			"constant.language.boolean.false.ts",
+			"variable.language.super.ts",
+			"support.type.builtin.ts",
+			"constant.language.null.ts",
+			"constant.language.undefined.ts"
 		],
 		"settings": {
 			"foreground": "#CF8E6D",
@@ -1291,7 +1303,7 @@
 	{
 		"name": "导出变量",
 		"scope": [
-			"meta.var.expr.ts"
+			"meta.var.expr.ts",
 		],
 		"settings": {
 			"foreground": "#C77DBA",
@@ -1312,7 +1324,10 @@
 		"name": "字符串",
 		"scope": [
 			"string.quoted.double.ts",
-			"string.quoted.single.ts"
+			"string.quoted.single.ts",
+			"string.template.ts",
+			"punctuation.definition.string.template.begin.ts",
+			"punctuation.definition.string.template.end.ts",
 		],
 		"settings": {
 			"foreground": "#6AAB73",
@@ -1345,9 +1360,21 @@
 			"variable.other.constant.ts",
 			"variable.other.readwrite.ts",
 			"variable.other.object.ts",
+			"punctuation.definition.template-expression.begin.ts",
+			"punctuation.definition.template-expression.end.ts",
 		],
 		"settings": {
 			"foreground": "#BCBEC4",
+		}
+	},
+	// 内置变量
+	{
+		"name": "内置变量",
+		"scope": [
+			"variable.other.constant.object.ts"
+		],
+		"settings": {
+			"foreground": "#C77DBB",
 		}
 	},
 	// 对象属性
@@ -1357,7 +1384,8 @@
 			"variable.object.property.ts",
 			"meta.object-literal.key.ts",
 			"variable.other.object.property.ts",
-			"variable.other.property.ts"
+			"variable.other.property.ts",
+			"variable.other.constant.property.ts"
 		],
 		"settings": {
 			"foreground": "#C77DBB",
@@ -1379,7 +1407,12 @@
 			"keyword.operator.type.ts",
 			"storage.type.function.arrow.ts",
 			"punctuation.accessor.optional.ts",
-			"keyword.operator.relational.ts"
+			"keyword.operator.relational.ts",
+			"keyword.operator.increment.ts",
+			"keyword.operator.decrement.ts",
+			"keyword.operator.bitwise.ts",
+			"constant.language.import-export-all.ts",
+			"punctuation.separator.parameter.ts"
 		],
 		"settings": {
 			"foreground": "#BCBEC4",
